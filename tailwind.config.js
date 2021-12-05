@@ -20,6 +20,7 @@ module.exports = {
       animation: {
         bounce: 'bounce 1.6s ease-in infinite',
       },
+      backdropGrayscale: ['hover', 'focus'],
     },
   },
   variants: {
