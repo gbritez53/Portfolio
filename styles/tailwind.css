@@ -56,7 +56,7 @@
     margin: auto;
     width: 100%;
     height: 100%;
-    background: rgba(117, 89, 223, 0.7);
+    background: rgba(117, 89, 223, 0.9);
     filter: blur(128px);
     z-index: 0;
   }
