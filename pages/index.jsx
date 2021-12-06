@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <Fullpage>
       <FullPageSections>
-        <section className="bg-coolGray-100 dark:bg-coolGray-900 text-gray-900 dark:text-white">
+        <section className="bg-coolGray-100 dark:bg-coolGray-900 text-gray-900 dark:text-white px-4 md:px-20">
           <FullpageSection>
             <section className="bg-gradient flex flex-col justify-center items-center h-full dark:text-white relative ">
               {systemTheme !== 'dark' ? (
@@ -43,10 +43,9 @@ const Home = () => {
                   <SiLinkedin className="w-8 h-8 dark:text-lime-400 text-indigo-600" />
                 </a>
                 <a
-                  href="/about"
-                  // href="https://github.com/gbritez53"
-                  // target="_blank"
-                  // rel="noopener noreferrer"
+                  href="https://github.com/gbritez53"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="transform hover:scale-125 transition-all duration-300 ease-in-out"
                 >
                   <ImGithub className="w-8 h-8 dark:text-lime-400 text-indigo-600" />
@@ -62,10 +61,11 @@ const Home = () => {
 
           <FullpageSection>
             <section className="flex flex-col items-center justify-center h-screen mx-auto">
-              <a name="/about"></a>
-              <h2 className="text-4xl font-bold col-span-3 py-5">About me</h2>
-              <div className="flex flex-col items-center md:flex-row md:justify-center">
-                <figcaption className="about-me relative w-28 md:w-52">
+              <div className="flex flex-col items-center md:grid md:grid-cols-3 gap-x-12 gap-y-8">
+                <h2 className="text-3xl md:text-4xl font-bold md:col-span-3 md:col-start-2 ">
+                  About me
+                </h2>
+                <figcaption className="about-me relative w-32 md:w-52 justify-self-end">
                   <Image
                     src="/Gabriel.jpeg"
                     alt="Gabriel Britez"
@@ -75,24 +75,30 @@ const Home = () => {
                     className="avatar rounded-full"
                   />
                 </figcaption>
-                <div className="ml-6 w-6/12">
+                <div className=" w-11/12 col-span-2">
                   <h3 className="font-semibold text-xl">Profile:</h3>
-                  <p className="break-words dark:text-gray-300">
+                  <p className="break-words dark:text-gray-300 pb-8 md:pb-0">
                     I am enthusiastic about web application development and
                     interface design. Passionate about self-taught learning and
                     someone self-critical with me work, constantly seeking to
                     improve. I consider someone direct and responsible.
                   </p>
                   <h3 className="font-semibold text-xl">Education:</h3>
-                  <div className="grid grid-cols-2">
-                    <p className="dark:text-gray-300">
-                      <span className="dark:text-lime-300">2015 - 2018</span>
-                      <p>National University of Misiones. (UNAM - FCEQyN)</p>
-                    </p>
-                    <p className="dark:text-gray-300">
-                      <span className="dark:text-lime-300">2019 - 2021</span>
+                  <div className="grid grid-cols-2 gap-6 md:gap-4">
+                    <div className="text-gray-700 dark:text-gray-300">
+                      <span className="text-indigo-600 dark:text-lime-300">
+                        2015 - 2019
+                      </span>
+                      <p>
+                        National University of Misiones. <br /> (UNAM - FCEQyN)
+                      </p>
+                    </div>
+                    <div className="text-gray-700 dark:text-gray-300">
+                      <span className="text-indigo-600 dark:text-lime-300">
+                        2020 - 2022
+                      </span>
                       <p>Training in online courses on web development</p>
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
