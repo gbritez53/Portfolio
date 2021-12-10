@@ -1,18 +1,24 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        blueGray: colors.blueGray,
-        coolGray: colors.coolGray,
+        blueGray: colors.slate,
+        coolGray: colors.gray,
         lime: colors.lime,
         orange: colors.orange,
         amber: colors.amber,
         rose: colors.rose,
+        pink: colors.pink,
+        teal: colors.teal,
         sky: colors.sky,
+        fuchsia: colors.fuchsia,
       },
       fontFamily: {
         fredoka: ['Fredoka One', 'serif'],

@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-      {width > 768 ? (
+      {width > 1025 ? (
         <Fullpage>
           <FullPageSections>
             <section className="bg-coolGray-100 dark:bg-coolGray-900 text-gray-900 dark:text-white px-4 md:px-20">

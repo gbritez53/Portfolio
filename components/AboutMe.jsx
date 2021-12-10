@@ -17,7 +17,7 @@ const AboutMe = () => {
             className="avatar rounded-full"
           />
         </figcaption>
-        <div className=" w-11/12 col-span-2 text-sm md:text-base">
+        <article className=" w-11/12 col-span-2 text-sm md:text-base">
           <h3 className="font-semibold text-xl">Profile:</h3>
           <p className="break-words dark:text-gray-300 pb-8 md:pb-4">
             I am enthusiastic about web application development and interface
@@ -42,7 +42,7 @@ const AboutMe = () => {
               <p>Training in online courses on web development</p>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
   )
