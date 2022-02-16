@@ -4,6 +4,7 @@ import { CgArrowDown } from 'react-icons/cg'
 import { ImGithub } from 'react-icons/im'
 import { SiLinkedin } from 'react-icons/si'
 import useWindowSize from '../hooks/useWindowSize'
+import ArrowKeys from './ArrowKeys'
 
 const Hero = () => {
   const { width } = useWindowSize()
@@ -45,6 +46,7 @@ const Hero = () => {
           <CgArrowDown className="text-3xl dark:text-lime-400 text-indigo-600 text-center" />
         </div>
       )}
+      <ArrowKeys />
     </section>
   )
 }

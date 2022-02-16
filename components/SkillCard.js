@@ -5,7 +5,7 @@ const SkillCard = ({ classes, skill, children }) => {
   return (
     <div className="flex flex-col items-center">
       <div
-        className={`w-20 h-20 rounded-md bg-opacity-10 border ${classes} flex justify-center items-center`}
+        className={`w-20 h-20 rounded-lg bg-opacity-20 border-[1.8px] ${classes} flex justify-center items-center`}
       >
         <div className="flex">
           <Image
